@@ -1,4 +1,4 @@
-public class Entidad {
+public abstract class Entidad {
     private int vida;
     private int ataque;
     private int defensa;
@@ -55,4 +55,6 @@ public class Entidad {
 
     }
 
+
+    public abstract int turno(int accion);
 }

@@ -9,5 +9,15 @@ public class Enemigo extends Entidad {
         super(vida, ataque, defensa, nombre);
         this.dificultad = dificultad;
     }
+    @Override
+    public int turno(int accion) {
+        if (accion==1){
+            accion=getAtaque()*dificultad*2;
+        }
+        if (accion==2){
+            accion=getAtaque()*dificultad*2;
+        }
+        return accion;
+    }
 
 }

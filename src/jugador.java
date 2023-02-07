@@ -10,6 +10,17 @@ public class jugador extends Entidad{
         this.experiencia=experiencia;
         this.nivel=nivel;
     }
-    
+    @Override
+    public int turno(int accion) {
+        if (accion==1){
+            accion=getAtaque()*nivel*2;
+        }
+        if (accion==2){
+            accion=getAtaque()*nivel*2;
+        }
+        return accion;
+
+    }
+
 
 }
